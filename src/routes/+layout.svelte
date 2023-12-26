@@ -1,27 +1,23 @@
 <script>
 	import Content from "$lib/Content.svelte";
-  import Head from "$lib/Head.svelte";
 	import Nav from "$lib/Nav.svelte";
 </script>
 
-<div id="main">
-  <Head />
+<div id="website">
+  <Nav />
   <Content>
     <slot></slot>
   </Content>
 </div>
 
 <style>
-  #main {
+  #website {
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 100vh;
     width: 100vw;
   }
 
-  #d-flex {
-    display: flex;
-    width: 100vw;
-    height: 100%;
-  }
+
 </style>

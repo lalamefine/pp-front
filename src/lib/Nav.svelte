@@ -2,35 +2,34 @@
 <nav>
     <a href="/"><div class="card">Home</div></a>
     <a href="/cv"><div class="card">CV</div></a>
-    <a href="/projects"><div class="card">Projets</div></a>
+    <a href="/projets"><div class="card">Projets</div></a>
 </nav>
 
 <style>
   nav {
-    height: 100%;
     width: 100vw;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
   }
   div.card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: 1px solid #fff1;
-    border-radius: 5px;
-    min-width: 100px;
-    min-height: 50px;
+    border-bottom: 2px solid #fff1;
     padding: 5px;
+    height: 100%;
+    transition-duration: 200ms;
   }
   div.card:hover {
-    background-color: rgb(135, 214, 238);
+    border-bottom: 4px solid rgb(255, 255, 255);
+    padding-bottom: 3px;
+    /* background-color: rgb(135, 214, 238); */
     color: white;
     cursor: pointer;
   }
   a{
-    padding: 8px; 
+    text-align: center;
+    ;
+    width: 100%;
     font-size: larger;
   }
 </style>
