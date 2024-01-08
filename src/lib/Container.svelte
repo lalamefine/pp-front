@@ -1,18 +1,13 @@
 
 <div class="content">
-  <div class="padder">
-    <slot></slot>
-  </div>
+  <slot></slot>
 </div>
 
 <style>
   .content {
+    margin: 20px 0px 0px 0px;
     display: flex;
-    background-color:rgba(255, 255, 255, 0.02);
     flex-direction: column;
-  }
-  .padder {
-    padding: 0px 20px 10px 20px;
   }
   @media (max-width: 1000px) {
     .content {

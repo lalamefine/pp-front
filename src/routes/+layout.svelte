@@ -1,13 +1,13 @@
 <script>
-	import Content from "$lib/Content.svelte";
+	import Container from "$lib/Container.svelte";
 	import Nav from "$lib/Nav.svelte";
 </script>
 
 <div id="website">
   <Nav />
-  <Content>
+  <Container>
     <slot></slot>
-  </Content>
+  </Container>
 </div>
 
 <style>
@@ -18,6 +18,4 @@
     height: 100vh;
     width: 100vw;
   }
-
-
 </style>
